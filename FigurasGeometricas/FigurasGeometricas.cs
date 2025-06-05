@@ -24,14 +24,14 @@ public class Circulo
         radio = nuevoRadio;
     }
     
-    // CalcularArea es una función que devuelve un valor double, se utiliza para calcular el área de un círculo
+    // Calcular el área es una función que devuelve un valor double, se utiliza para calcular el área de un círculo
     // Fórmula del área: π × radio × radio
     public double CalcularArea()
     {
         return Math.PI * radio * radio;
     }
     
-    // CalcularPerimetro es una función que devuelve un valor double, se utiliza para calcular el perímetro de un círculo
+    // Calcular el perimetro es una función que devuelve un valor double, se utiliza para calcular el perímetro de un círculo
     // Fórmula del perímetro: 2 × π × radio
     public double CalcularPerimetro()
     {
@@ -63,14 +63,14 @@ public class Cuadrado
         lado = nuevoLado;
     }
     
-    // CalcularArea es una función que devuelve un valor double, se utiliza para calcular el área de un cuadrado
+    // Calcular el área es una función que devuelve un valor double, se utiliza para calcular el área de un cuadrado
     // Fórmula del área: lado × lado
     public double CalcularArea()
     {
         return lado * lado;
     }
     
-    // CalcularPerimetro es una función que devuelve un valor double, se utiliza para calcular el perímetro de un cuadrado  
+    // Calcular el perimetro es una función que devuelve un valor double, se utiliza para calcular el perímetro de un cuadrado  
     // Fórmula del perímetro: 4 × lado
     public double CalcularPerimetro()
     {
@@ -84,7 +84,7 @@ public class Program
     public static void Main()
     {
         // Crear un círculo con radio 5
-        Circulo miCirculo = new Circulo(5.0);
+        Circulo miCirculo = new Circulo(6.0);
         
         Console.WriteLine("=== MI CÍRCULO ===");
         Console.WriteLine("Radio: " + miCirculo.GetRadio());
@@ -105,7 +105,7 @@ public class Program
         Console.WriteLine(); // Línea en blanco
         
         // Crear un cuadrado con lado 4
-        Cuadrado miCuadrado = new Cuadrado(4.0);
+        Cuadrado miCuadrado = new Cuadrado(5.0);
         
         Console.WriteLine("=== MI CUADRADO ===");
         Console.WriteLine("Lado: " + miCuadrado.GetLado());

@@ -1,0 +1,15 @@
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\bin\Debug\net9.0\FigurasGeometricas.exe
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\bin\Debug\net9.0\FigurasGeometricas.deps.json
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\bin\Debug\net9.0\FigurasGeometricas.runtimeconfig.json
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\bin\Debug\net9.0\FigurasGeometricas.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\bin\Debug\net9.0\FigurasGeometricas.pdb
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.AssemblyInfoInputs.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.AssemblyInfo.cs
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.csproj.CoreCompileInputs.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.sourcelink.json
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\refint\FigurasGeometricas.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.pdb
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\FigurasGeometricas.genruntimeconfig.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\FigurasGeometricas\obj\Debug\net9.0\ref\FigurasGeometricas.dll
