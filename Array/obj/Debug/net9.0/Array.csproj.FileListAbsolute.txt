@@ -1,0 +1,15 @@
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\bin\Debug\net9.0\Array.exe
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\bin\Debug\net9.0\Array.deps.json
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\bin\Debug\net9.0\Array.runtimeconfig.json
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\bin\Debug\net9.0\Array.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\bin\Debug\net9.0\Array.pdb
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.AssemblyInfoInputs.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.AssemblyInfo.cs
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.csproj.CoreCompileInputs.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.sourcelink.json
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\refint\Array.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.pdb
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\Array.genruntimeconfig.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\Array\obj\Debug\net9.0\ref\Array.dll
