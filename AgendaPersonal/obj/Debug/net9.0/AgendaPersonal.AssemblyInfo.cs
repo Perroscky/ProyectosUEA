@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FigurasGeometricas")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AgendaPersonal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+357769a8f802e758d54c3b430379ff9fba52ecbe")]
-[assembly: System.Reflection.AssemblyProductAttribute("FigurasGeometricas")]
-[assembly: System.Reflection.AssemblyTitleAttribute("FigurasGeometricas")]
+[assembly: System.Reflection.AssemblyProductAttribute("AgendaPersonal")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AgendaPersonal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

@@ -1,0 +1,15 @@
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\bin\Debug\net9.0\StructCancionesMP3.exe
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\bin\Debug\net9.0\StructCancionesMP3.deps.json
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\bin\Debug\net9.0\StructCancionesMP3.runtimeconfig.json
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\bin\Debug\net9.0\StructCancionesMP3.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\bin\Debug\net9.0\StructCancionesMP3.pdb
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.AssemblyInfoInputs.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.AssemblyInfo.cs
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.csproj.CoreCompileInputs.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.sourcelink.json
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\refint\StructCancionesMP3.dll
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.pdb
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\StructCancionesMP3.genruntimeconfig.cache
+C:\Users\LOANY\Desktop\ProyectosUEA\StructCancionesMP3\obj\Debug\net9.0\ref\StructCancionesMP3.dll
