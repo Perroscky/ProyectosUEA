@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\LOANY\\.nuget\\packages\\": {}
+    "C:\\Users\\Loany\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\Array\\Array.csproj",
+      "projectUniqueName": "D:\\ProyectosUEA\\ProyectosUEA\\Array\\Array.csproj",
       "projectName": "Array",
-      "projectPath": "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\Array\\Array.csproj",
-      "packagesPath": "C:\\Users\\LOANY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\Array\\obj\\",
+      "projectPath": "D:\\ProyectosUEA\\ProyectosUEA\\Array\\Array.csproj",
+      "packagesPath": "C:\\Users\\Loany\\.nuget\\packages\\",
+      "outputPath": "D:\\ProyectosUEA\\ProyectosUEA\\Array\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LOANY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Loany\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
