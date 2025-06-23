@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj": {}
+    "D:\\ProyectosUEA\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj": {
+    "D:\\ProyectosUEA\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj",
+        "projectUniqueName": "D:\\ProyectosUEA\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj",
         "projectName": "FigurasGeometricas",
-        "projectPath": "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj",
-        "packagesPath": "C:\\Users\\LOANY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LOANY\\Desktop\\ProyectosUEA\\FigurasGeometricas\\obj\\",
+        "projectPath": "D:\\ProyectosUEA\\ProyectosUEA\\FigurasGeometricas\\FigurasGeometricas.csproj",
+        "packagesPath": "C:\\Users\\Loany\\.nuget\\packages\\",
+        "outputPath": "D:\\ProyectosUEA\\ProyectosUEA\\FigurasGeometricas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LOANY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Loany\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
