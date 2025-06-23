@@ -134,6 +134,89 @@ namespace RegistroEstudiante
         // Obtener la cantidad de estudiantes
         public int CantidadEstudiantes => estudiantes.Count;
 
+        // Editar un estudiante existente
+        public bool EditarEstudiante(int id)
+        {
+            Estudiante estudiante = BuscarEstudiante(id);
+            if (estudiante == null)
+            {
+                Console.WriteLine($"No se encontró ningún estudiante con ID: {id}");
+                return false;
+            }
+
+            Console.WriteLine("\n=== EDITANDO ESTUDIANTE ===");
+            estudiante.MostrarDatos();
+            
+            return EditarEstudianteInteractivo(estudiante);
+        }
+
+        // Método para editar un estudiante de forma interactiva
+        private bool EditarEstudianteInteractivo(Estudiante estudiante)
+        {
+            try
+            {
+                Console.WriteLine("\n--- OPCIONES DE EDICIÓN ---");
+                Console.WriteLine("Presione Enter para mantener el valor actual, o escriba el nuevo valor:");
+
+                // Editar nombres
+                Console.Write($"Nombres actuales: [{estudiante.Nombres}] - Nuevos nombres: ");
+                string nuevosNombres = Console.ReadLine()?.Trim();
+                if (!string.IsNullOrWhiteSpace(nuevosNombres))
+                {
+                    estudiante.Nombres = nuevosNombres;
+                }
+
+                // Editar apellidos
+                Console.Write($"Apellidos actuales: [{estudiante.Apellidos}] - Nuevos apellidos: ");
+                string nuevosApellidos = Console.ReadLine()?.Trim();
+                if (!string.IsNullOrWhiteSpace(nuevosApellidos))
+                {
+                    estudiante.Apellidos = nuevosApellidos;
+                }
+
+                // Editar dirección
+                Console.Write($"Dirección actual: [{estudiante.Direccion}] - Nueva dirección: ");
+                string nuevaDireccion = Console.ReadLine()?.Trim();
+                if (!string.IsNullOrWhiteSpace(nuevaDireccion))
+                {
+                    estudiante.Direccion = nuevaDireccion;
+                }
+
+                // Editar teléfonos
+                Console.WriteLine("\n--- EDICIÓN DE TELÉFONOS ---");
+                for (int i = 0; i < estudiante.Telefonos.Length; i++)
+                {
+                    string telefonoActual = estudiante.Telefonos[i] ?? "(no asignado)";
+                    Console.Write($"Teléfono {i + 1} actual: [{telefonoActual}] - Nuevo teléfono: ");
+                    string nuevoTelefono = Console.ReadLine()?.Trim();
+                    
+                    if (!string.IsNullOrWhiteSpace(nuevoTelefono))
+                    {
+                        estudiante.AsignarTelefono(i, nuevoTelefono);
+                    }
+                    else if (nuevoTelefono == "" && estudiante.Telefonos[i] != null)
+                    {
+                        // Si el usuario presiona Enter y había un teléfono, se mantiene
+                        // Si quiere borrarlo, puede escribir "borrar" o similar
+                        Console.Write("¿Desea eliminar este teléfono? (s/n): ");
+                        string respuesta = Console.ReadLine()?.Trim().ToLower();
+                        if (respuesta == "s" || respuesta == "si" || respuesta == "sí")
+                        {
+                            estudiante.Telefonos[i] = null;
+                        }
+                    }
+                }
+
+                Console.WriteLine("\n¡Estudiante editado exitosamente!");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al editar estudiante: {ex.Message}");
+                return false;
+            }
+        }
+
         // Método para crear un estudiante interactivamente
         public Estudiante CrearEstudianteInteractivo()
         {
@@ -240,10 +323,11 @@ namespace RegistroEstudiante
                 Console.WriteLine("2. Mostrar todos los estudiantes");
                 Console.WriteLine("3. Mostrar lista resumida");
                 Console.WriteLine("4. Buscar estudiante por ID");
-                Console.WriteLine("5. Mostrar cantidad de estudiantes");
-                Console.WriteLine("6. Salir");
+                Console.WriteLine("5. Editar estudiante");
+                Console.WriteLine("6. Mostrar cantidad de estudiantes");
+                Console.WriteLine("7. Salir");
                 Console.WriteLine(new string('*', 60));
-                Console.Write("Seleccione una opción (1-6): ");
+                Console.Write("Seleccione una opción (1-7): ");
 
                 string opcion = Console.ReadLine();
 
@@ -262,14 +346,17 @@ namespace RegistroEstudiante
                         BuscarEstudiantePorId();
                         break;
                     case "5":
-                        Console.WriteLine($"\nTotal de estudiantes registrados: {gestor.CantidadEstudiantes}");
+                        EditarEstudiante();
                         break;
                     case "6":
+                        Console.WriteLine($"\nTotal de estudiantes registrados: {gestor.CantidadEstudiantes}");
+                        break;
+                    case "7":
                         continuar = false;
                         Console.WriteLine("¡Gracias por usar el sistema!");
                         break;
                     default:
-                        Console.WriteLine("Opción no válida. Por favor, seleccione una opción del 1 al 6.");
+                        Console.WriteLine("Opción no válida. Por favor, seleccione una opción del 1 al 7.");
                         break;
                 }
 
@@ -314,6 +401,34 @@ namespace RegistroEstudiante
                 else
                 {
                     Console.WriteLine($"No se encontró ningún estudiante con ID: {id}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("ID inválido. Debe ingresar un número.");
+            }
+        }
+
+        static void EditarEstudiante()
+        {
+            if (gestor.CantidadEstudiantes == 0)
+            {
+                Console.WriteLine("\nNo hay estudiantes registrados para editar.");
+                return;
+            }
+
+            // Mostrar lista resumida primero
+            gestor.MostrarListaResumida();
+
+            Console.Write("\nIngrese el ID del estudiante que desea editar: ");
+            if (int.TryParse(Console.ReadLine(), out int id))
+            {
+                bool exitoEdicion = gestor.EditarEstudiante(id);
+                if (exitoEdicion)
+                {
+                    Console.WriteLine("\nDatos actualizados del estudiante:");
+                    Estudiante estudianteEditado = gestor.BuscarEstudiante(id);
+                    estudianteEditado?.MostrarDatos();
                 }
             }
             else
