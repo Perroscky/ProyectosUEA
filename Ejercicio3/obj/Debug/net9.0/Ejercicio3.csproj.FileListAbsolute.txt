@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\bin\Debug\net9.0\Ejercicio3.exe
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\bin\Debug\net9.0\Ejercicio3.deps.json
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\bin\Debug\net9.0\Ejercicio3.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\bin\Debug\net9.0\Ejercicio3.dll
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\bin\Debug\net9.0\Ejercicio3.pdb
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.dll
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\refint\Ejercicio3.dll
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.pdb
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\Ejercicio3.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\Ejercicio3\obj\Debug\net9.0\ref\Ejercicio3.dll
