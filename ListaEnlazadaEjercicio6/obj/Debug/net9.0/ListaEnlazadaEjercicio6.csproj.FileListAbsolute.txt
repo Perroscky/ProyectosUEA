@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\bin\Debug\net9.0\ListaEnlazadaEjercicio6.exe
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\bin\Debug\net9.0\ListaEnlazadaEjercicio6.deps.json
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\bin\Debug\net9.0\ListaEnlazadaEjercicio6.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\bin\Debug\net9.0\ListaEnlazadaEjercicio6.dll
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\bin\Debug\net9.0\ListaEnlazadaEjercicio6.pdb
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.dll
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\refint\ListaEnlazadaEjercicio6.dll
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.pdb
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ListaEnlazadaEjercicio6.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\ListaEnlazadaEjercicio6\obj\Debug\net9.0\ref\ListaEnlazadaEjercicio6.dll
