@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\bin\Debug\net9.0\pilas-stacks.exe
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\bin\Debug\net9.0\pilas-stacks.deps.json
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\bin\Debug\net9.0\pilas-stacks.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\bin\Debug\net9.0\pilas-stacks.dll
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\bin\Debug\net9.0\pilas-stacks.pdb
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.dll
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\refint\pilas-stacks.dll
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.pdb
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\pilas-stacks.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\pilas-stacks\obj\Debug\net9.0\ref\pilas-stacks.dll
