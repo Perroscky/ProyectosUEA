@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\traductor\bin\Debug\net9.0\traductor.exe
+D:\ProyectosUEA\ProyectosUEA\traductor\bin\Debug\net9.0\traductor.deps.json
+D:\ProyectosUEA\ProyectosUEA\traductor\bin\Debug\net9.0\traductor.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\traductor\bin\Debug\net9.0\traductor.dll
+D:\ProyectosUEA\ProyectosUEA\traductor\bin\Debug\net9.0\traductor.pdb
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.dll
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\refint\traductor.dll
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.pdb
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\traductor.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\traductor\obj\Debug\net9.0\ref\traductor.dll
