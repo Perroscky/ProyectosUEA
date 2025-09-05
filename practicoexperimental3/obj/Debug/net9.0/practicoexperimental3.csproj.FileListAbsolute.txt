@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\bin\Debug\net9.0\practicoexperimental3.exe
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\bin\Debug\net9.0\practicoexperimental3.deps.json
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\bin\Debug\net9.0\practicoexperimental3.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\bin\Debug\net9.0\practicoexperimental3.dll
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\bin\Debug\net9.0\practicoexperimental3.pdb
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.dll
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\refint\practicoexperimental3.dll
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.pdb
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\practicoexperimental3.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\practicoexperimental3\obj\Debug\net9.0\ref\practicoexperimental3.dll
