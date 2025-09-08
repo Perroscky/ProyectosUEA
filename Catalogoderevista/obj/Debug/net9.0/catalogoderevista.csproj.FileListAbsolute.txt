@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\bin\Debug\net9.0\catalogoderevista.exe
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\bin\Debug\net9.0\catalogoderevista.deps.json
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\bin\Debug\net9.0\catalogoderevista.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\bin\Debug\net9.0\catalogoderevista.dll
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\bin\Debug\net9.0\catalogoderevista.pdb
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.dll
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\refint\catalogoderevista.dll
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.pdb
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\catalogoderevista.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\Catalogoderevista\obj\Debug\net9.0\ref\catalogoderevista.dll
