@@ -1,0 +1,15 @@
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\bin\Debug\net9.0\ArbolBinario.exe
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\bin\Debug\net9.0\ArbolBinario.deps.json
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\bin\Debug\net9.0\ArbolBinario.runtimeconfig.json
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\bin\Debug\net9.0\ArbolBinario.dll
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\bin\Debug\net9.0\ArbolBinario.pdb
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.AssemblyInfoInputs.cache
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.AssemblyInfo.cs
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.csproj.CoreCompileInputs.cache
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.sourcelink.json
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.dll
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\refint\ArbolBinario.dll
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.pdb
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ArbolBinario.genruntimeconfig.cache
+D:\ProyectosUEA\ProyectosUEA\ArbolBinario\obj\Debug\net9.0\ref\ArbolBinario.dll
