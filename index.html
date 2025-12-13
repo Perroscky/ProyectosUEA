@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Web - Semana 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Proyecto de HTML5 y CSS - Semana 3</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección de Introducción -->
+        <section id="inicio">
+            <h2>Sobre Este Proyecto</h2>
+            <article>
+                <h3>Objetivo del Sitio</h3>
+                <p>Este sitio web demuestra el uso de <strong>etiquetas semánticas HTML5</strong> y aplicación de <em>estilos con CSS</em>. El proyecto incluye diversos elementos multimedia, listas, tablas y formularios.</p>
+                <p>Aprenderemos a estructurar correctamente un documento web profesional y a publicarlo en GitHub Pages.</p>
+            </article>
+
+            <!-- Listas -->
+            <article>
+                <h3>Tecnologías Utilizadas</h3>
+                <h4>Lista Ordenada de Pasos:</h4>
+                <ol>
+                    <li>Configuración del entorno de desarrollo</li>
+                    <li>Creación de estructura HTML5</li>
+                    <li>Aplicación de estilos CSS</li>
+                    <li>Publicación en GitHub Pages</li>
+                </ol>
+
+                <h4>Herramientas Necesarias:</h4>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Navegador Web Moderno</li>
+                    <li>Git y GitHub</li>
+                    <li>Live Server Extension</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Sección Multimedia -->
+        <section id="multimedia">
+            <h2>Galería Multimedia</h2>
+            
+            <article>
+                <h3>Imagen de Ejemplo</h3>
+                <img src="assets/img/imagen1.jpg" alt="Imagen representativa del proyecto de desarrollo web" class="imagen-principal">
+                <p class="pie-imagen"><em>Imagen ilustrativa del desarrollo web moderno</em></p>
+            </article>
+
+            <article>
+                <h3>Video Demostrativo</h3>
+                <video controls class="video-principal">
+                    <source src="assets/video/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video HTML5.
+                </video>
+                <p class="pie-imagen"><em>Video tutorial sobre desarrollo web</em></p>
+            </article>
+
+            <!-- Enlace Externo -->
+            <article>
+                <h3>Recursos Adicionales</h3>
+                <p>Para aprender más sobre HTML5, visita: 
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" class="enlace-externo">
+                        MDN Web Docs - HTML
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <!-- Sección con Tabla -->
+        <section id="tabla">
+            <h2>Comparativa de Tecnologías Web</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Propósito</th>
+                        <th>Dificultad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Estructura del contenido</td>
+                        <td>Básica</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Diseño y presentación</td>
+                        <td>Intermedia</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Interactividad y lógica</td>
+                        <td>Avanzada</td>
+                    </tr>
+                    <tr>
+                        <td>Git/GitHub</td>
+                        <td>Control de versiones</td>
+                        <td>Intermedia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <article>
+                <p>Si tienes preguntas o comentarios, completa el siguiente formulario:</p>
+                <form class="formulario-contacto">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 Mi Proyecto Web Semana 3. Como parte de la materia Desarrollo de Apliaciones Web UEA.</p>
+        <p><strong>Autor:</strong> Luis Samaniego | <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>
