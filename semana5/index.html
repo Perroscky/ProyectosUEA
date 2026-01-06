@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖼️ Galería Interactiva</h1>
+            <p>Agrega, selecciona y elimina imágenes dinámicamente</p>
+        </header>
+
+        <div class="controls">
+            <div class="input-group">
+                <input 
+                    type="url" 
+                    id="imageUrlInput" 
+                    placeholder="Ingresa la URL de una imagen..."
+                    aria-label="URL de la imagen"
+                >
+                <button id="addImageBtn" class="btn btn-primary">
+                    ➕ Agregar Imagen
+                </button>
+            </div>
+            <button id="deleteImageBtn" class="btn btn-danger" disabled>
+                🗑️ Eliminar Imagen Seleccionada
+            </button>
+        </div>
+
+        <div class="gallery-info">
+            <p>Total de imágenes: <span id="imageCount">0</span></p>
+            <p class="instruction">💡 Haz clic en una imagen para seleccionarla</p>
+        </div>
+
+        <div id="gallery" class="gallery">
+            <!-- Las imágenes se agregarán aquí dinámicamente -->
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <p>📷 No hay imágenes en la galería</p>
+            <p class="hint">Comienza agregando una imagen usando el campo de arriba</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
