@@ -35,4 +35,4 @@ semana-5/
 - Botones: Amarillo (#ffff00)
 
 ---
-Alumno: Luis Samaniego
+Luis A. Samaniego Segura
