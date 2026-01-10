@@ -9,56 +9,40 @@ const emptyState = document.getElementById('emptyState');
 // Variable para guardar la imagen seleccionada
 let selectedImage = null;
 
-// URLs de imágenes por defecto (opcional)
-const defaultImages = [
-    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500',
-    'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500',
-    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500'
-];
+console.log('🚀 Script cargado correctamente');
 
-// Inicializar la aplicación
-function init() {
-    // Cargar imágenes por defecto
-    loadDefaultImages();
-    
-    // Event listeners
-    addImageBtn.addEventListener('click', addImage);
-    deleteImageBtn.addEventListener('click', deleteSelectedImage);
-    
-    // Permitir agregar imagen con Enter
-    imageUrlInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            addImage();
-        }
-    });
-    
-    // Actualizar contador inicial
-    updateImageCount();
-}
-
-// Cargar imágenes por defecto (opcional)
-function loadDefaultImages() {
-    defaultImages.forEach(url => {
-        createImageElement(url);
-    });
-    updateImageCount();
+// Función para validar URL
+function isValidUrl(string) {
+    try {
+        const url = new URL(string);
+        return url.protocol === 'http:' || url.protocol === 'https:';
+    } catch (err) {
+        return false;
+    }
 }
 
 // Función para agregar una imagen
 function addImage() {
+    console.log('🔘 Botón "Agregar Imagen" presionado');
+    
     const url = imageUrlInput.value.trim();
+    console.log('📝 URL ingresada:', url);
     
     // Validar que la URL no esté vacía
     if (!url) {
-        alert('Por favor, ingresa una URL válida');
+        alert('❌ Por favor, ingresa una URL');
+        imageUrlInput.focus();
         return;
     }
     
     // Validar formato básico de URL
     if (!isValidUrl(url)) {
-        alert('Por favor, ingresa una URL válida de imagen');
+        alert('❌ Por favor, ingresa una URL válida (debe comenzar con http:// o https://)');
+        imageUrlInput.focus();
         return;
     }
+    
+    console.log('✅ URL válida, creando imagen...');
     
     // Crear el elemento de imagen
     createImageElement(url);
@@ -71,20 +55,14 @@ function addImage() {
     
     // Focus en el input para agregar más imágenes
     imageUrlInput.focus();
-}
-
-// Validar URL
-function isValidUrl(string) {
-    try {
-        new URL(string);
-        return true;
-    } catch (err) {
-        return false;
-    }
+    
+    console.log('✅ Imagen agregada exitosamente');
 }
 
 // Crear elemento de imagen en el DOM
 function createImageElement(url) {
+    console.log('📸 Creando elemento de imagen con URL:', url);
+    
     // Crear contenedor de la imagen
     const galleryItem = document.createElement('div');
     galleryItem.className = 'gallery-item';
@@ -94,15 +72,23 @@ function createImageElement(url) {
     img.src = url;
     img.alt = 'Imagen de galería';
     
+    console.log('🖼️ Elemento <img> creado con src:', img.src);
+    
+    // Manejar carga exitosa
+    img.onload = function() {
+        console.log('✅ Imagen cargada correctamente:', url);
+    };
+    
     // Manejar error de carga de imagen
-    img.onerror = () => {
+    img.onerror = function() {
+        console.error('❌ Error al cargar imagen:', url);
         galleryItem.remove();
-        alert('No se pudo cargar la imagen. Verifica la URL.');
+        alert('❌ No se pudo cargar la imagen. Verifica que la URL sea correcta y la imagen sea accesible.');
         updateImageCount();
     };
     
     // Event listener para seleccionar imagen
-    galleryItem.addEventListener('click', () => {
+    galleryItem.addEventListener('click', function() {
         selectImage(galleryItem);
     });
     
@@ -112,12 +98,16 @@ function createImageElement(url) {
     // Agregar contenedor a la galería
     gallery.appendChild(galleryItem);
     
+    console.log('📦 Elemento agregado al DOM. Total de imágenes:', gallery.children.length);
+    
     // Ocultar estado vacío
     emptyState.classList.remove('visible');
 }
 
 // Función para seleccionar una imagen
 function selectImage(galleryItem) {
+    console.log('🖱️ Imagen clickeada');
+    
     // Si hay una imagen previamente seleccionada, deseleccionarla
     if (selectedImage) {
         selectedImage.classList.remove('selected');
@@ -127,29 +117,35 @@ function selectImage(galleryItem) {
     if (selectedImage === galleryItem) {
         selectedImage = null;
         deleteImageBtn.disabled = true;
+        console.log('❌ Imagen deseleccionada');
     } else {
         // Seleccionar la nueva imagen
         selectedImage = galleryItem;
         selectedImage.classList.add('selected');
         deleteImageBtn.disabled = false;
+        console.log('✅ Imagen seleccionada');
     }
 }
 
 // Función para eliminar la imagen seleccionada
 function deleteSelectedImage() {
     if (!selectedImage) {
+        console.log('⚠️ No hay imagen seleccionada para eliminar');
         return;
     }
+    
+    console.log('🗑️ Eliminando imagen seleccionada');
     
     // Agregar animación de salida
     selectedImage.classList.add('removing');
     
     // Esperar a que termine la animación antes de eliminar
-    setTimeout(() => {
+    setTimeout(function() {
         selectedImage.remove();
         selectedImage = null;
         deleteImageBtn.disabled = true;
         updateImageCount();
+        console.log('✅ Imagen eliminada');
     }, 500);
 }
 
@@ -157,6 +153,7 @@ function deleteSelectedImage() {
 function updateImageCount() {
     const count = gallery.querySelectorAll('.gallery-item').length;
     imageCount.textContent = count;
+    console.log('📊 Contador actualizado:', count, 'imágenes');
     
     // Mostrar/ocultar estado vacío
     if (count === 0) {
@@ -166,8 +163,21 @@ function updateImageCount() {
     }
 }
 
+// Event listeners
+addImageBtn.addEventListener('click', addImage);
+deleteImageBtn.addEventListener('click', deleteSelectedImage);
+
+// Permitir agregar imagen con Enter
+imageUrlInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        console.log('⌨️ Tecla Enter presionada');
+        addImage();
+    }
+});
+
 // Event listener adicional para teclas del teclado
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', function(e) {
     // Eliminar con tecla Delete o Backspace
     if ((e.key === 'Delete' || e.key === 'Backspace') && selectedImage) {
         // Prevenir que borre si está escribiendo en el input
@@ -182,12 +192,22 @@ document.addEventListener('keydown', (e) => {
         selectedImage.classList.remove('selected');
         selectedImage = null;
         deleteImageBtn.disabled = true;
+        console.log('⌨️ Escape presionado - imagen deseleccionada');
     }
 });
 
-// Inicializar la aplicación cuando el DOM esté listo
+// Inicializar la aplicación
+function init() {
+    console.log('🎬 Inicializando galería...');
+    updateImageCount();
+    console.log('✅ Galería lista para usar');
+}
+
+// Inicializar cuando el DOM esté listo
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
     init();
 }
+
+console.log('✅ Script completamente cargado');
