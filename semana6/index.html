@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Registro de Usuario para Entrenamiento Militar</h1>
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre y apellido">
+                <div class="error-message" id="nombreError">Debes ingresar al menos un nombre y un apellido</div>
+                <div class="success-message" id="nombreSuccess">✓ Nombre válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="ejemplo@correo.com">
+                <div class="error-message" id="emailError">Ingresa un correo electrónico válido</div>
+                <div class="success-message" id="emailSuccess">✓ Correo válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Mínimo 8 caracteres">
+                <div class="password-strength">
+                    <div class="password-strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="error-message" id="passwordError">Mínimo 8 caracteres, debe incluir: mayúscula, minúscula, número y carácter especial</div>
+                <div class="success-message" id="passwordSuccess">✓ Contraseña segura</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" placeholder="Confirma tu contraseña">
+                <div class="error-message" id="confirmPasswordError">Las contraseñas no coinciden</div>
+                <div class="success-message" id="confirmPasswordSuccess">✓ Las contraseñas coinciden</div>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="Ingresa tu edad">
+                <div class="error-message" id="edadError">Debes ser mayor de 18 años</div>
+                <div class="success-message" id="edadSuccess">✓ Edad válida</div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit" id="submitBtn" disabled>Enviar Formulario</button>
+                <button type="reset" class="btn-reset" id="resetBtn">Reiniciar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <h2>✅ ¡Registro Exitoso!</h2>
+            <p>Tu formulario ha sido validado correctamente y enviado con éxito.</p>
+            <button onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
