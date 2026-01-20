@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Dinámica de Productos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            border: 2px solid #4a5a3a;
+        }
+
+        h1 {
+            color: #8a9a7a;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .agregar-producto {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .agregar-producto input {
+            flex: 1;
+            min-width: 150px;
+            padding: 12px;
+            border: 2px solid #4a5a3a;
+            border-radius: 8px;
+            font-size: 14px;
+            background: #2a2a2a;
+            color: #d4d4c8;
+            font-family: 'Times New Roman', Times, serif;
+            transition: border-color 0.3s;
+        }
+
+        .agregar-producto input:focus {
+            outline: none;
+            border-color: #6a7a5a;
+            background: #333;
+        }
+
+        .agregar-producto button {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #3a4a2a 0%, #556b2f 100%);
+            color: #d4d4c8;
+            border: 2px solid #4a5a3a;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .agregar-producto button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(74, 90, 58, 0.6);
+            background: linear-gradient(135deg, #4a5a3a 0%, #6a7a5a 100%);
+        }
+
+        .agregar-producto button:active {
+            transform: translateY(0);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            background: linear-gradient(135deg, #2a3a2a 0%, #3a4a3a 100%);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border-left: 5px solid #556b2f;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(74, 90, 58, 0.4);
+            background: linear-gradient(135deg, #3a4a3a 0%, #4a5a4a 100%);
+        }
+
+        .producto-nombre {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #a4b494;
+            margin-bottom: 8px;
+        }
+
+        .producto-precio {
+            font-size: 1.2em;
+            color: #8a9a7a;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .producto-descripcion {
+            color: #c4c4b8;
+            line-height: 1.5;
+        }
+
+        .lista-vacia {
+            text-align: center;
+            padding: 40px;
+            color: #6a7a5a;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Lista de Productos</h1>
+        
+        <div class="agregar-producto">
+            <input type="text" id="nombreInput" placeholder="Nombre del producto">
+            <input type="number" id="precioInput" placeholder="Precio" step="0.01" min="0">
+            <input type="text" id="descripcionInput" placeholder="Descripción">
+            <button onclick="agregarProducto()">Agregar Producto</button>
+        </div>
+
+        <ul id="listaProductos"></ul>
+    </div>
+
+    <script>
+        // Arreglo inicial de productos
+        const productos = [
+            {
+                nombre: "Laptop HP",
+                precio: 899.99,
+                descripcion: "Laptop potente con procesador Intel i7, 16GB RAM y 512GB SSD"
+            },
+            {
+                nombre: "Mouse Inalámbrico",
+                precio: 25.50,
+                descripcion: "Mouse ergonómico con conexión Bluetooth y batería de larga duración"
+            },
+            {
+                nombre: "Teclado Mecánico",
+                precio: 79.99,
+                descripcion: "Teclado mecánico RGB con switches azules, ideal para gaming"
+            },
+            {
+                nombre: "Monitor 27 pulgadas",
+                precio: 299.00,
+                descripcion: "Monitor Full HD con panel IPS y frecuencia de 144Hz"
+            }
+        ];
+
+        // Función para renderizar la lista de productos
+        function renderizarProductos() {
+            const lista = document.getElementById('listaProductos');
+            
+            // Limpiar la lista
+            lista.innerHTML = '';
+            
+            // Si no hay productos, mostrar mensaje
+            if (productos.length === 0) {
+                lista.innerHTML = '<li class="lista-vacia">No hay productos en la lista</li>';
+                return;
+            }
+            
+            // Crear elementos para cada producto
+            productos.forEach(producto => {
+                const li = document.createElement('li');
+                
+                li.innerHTML = `
+                    <div class="producto-nombre">${producto.nombre}</div>
+                    <div class="producto-precio">$${producto.precio.toFixed(2)}</div>
+                    <div class="producto-descripcion">${producto.descripcion}</div>
+                `;
+                
+                lista.appendChild(li);
+            });
+        }
+
+        // Función para agregar un nuevo producto
+        function agregarProducto() {
+            const nombreInput = document.getElementById('nombreInput');
+            const precioInput = document.getElementById('precioInput');
+            const descripcionInput = document.getElementById('descripcionInput');
+            
+            const nombre = nombreInput.value.trim();
+            const precio = parseFloat(precioInput.value);
+            const descripcion = descripcionInput.value.trim();
+            
+            // Validar que los campos no estén vacíos
+            if (!nombre || !precio || !descripcion) {
+                alert('Por favor, completa todos los campos');
+                return;
+            }
+            
+            if (precio <= 0) {
+                alert('El precio debe ser mayor a 0');
+                return;
+            }
+            
+            // Crear el nuevo producto
+            const nuevoProducto = {
+                nombre: nombre,
+                precio: precio,
+                descripcion: descripcion
+            };
+            
+            // Agregar al arreglo
+            productos.push(nuevoProducto);
+            
+            // Limpiar los campos
+            nombreInput.value = '';
+            precioInput.value = '';
+            descripcionInput.value = '';
+            
+            // Re-renderizar la lista
+            renderizarProductos();
+        }
+
+        // Renderizar productos al cargar la página
+        renderizarProductos();
+    </script>
+</body>
+</html>
