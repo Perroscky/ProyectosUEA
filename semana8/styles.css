@@ -1,0 +1,390 @@
+/* ===== PALETA DE COLORES DRAGON BALL Z ===== */
+:root {
+    --dbz-azul-oscuro: #0a1a3a;     /* Cielo nocturno */
+    --dbz-azul-electrico: #00aeff;  /* Aura de Goku */
+    --dbz-azul-cielo: #4fc3f7;      /* Aura SSG */
+    --dbz-naranja-fuego: #ff6b00;   /* Kamehameha */
+    --dbz-rojo-pasion: #ff1744;     /* Esfera Dragon */
+    --dbz-oro-ssj: #ffd700;         /* Super Saiyajin */
+    --dbz-violeta: #7b1fa2;         /* Bills */
+    --dbz-rosa: #ff4081;           /* Aura SSGSS */
+    --dbz-blanco-nube: #f5f7fa;     /* Nubes */
+    --dbz-negro-espacio: #121212;   /* Espacio */
+}
+
+/* Estilos generales */
+body {
+    padding-top: 76px; /* Para compensar el navbar fijo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--dbz-blanco-nube) 0%, #e3f2fd 100%);
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR CON EFECTO AURA ===== */
+.navbar {
+    background: linear-gradient(90deg, var(--dbz-azul-oscuro) 0%, var(--dbz-violeta) 100%) !important;
+    box-shadow: 0 4px 20px rgba(0, 174, 255, 0.3);
+    border-bottom: 2px solid var(--dbz-azul-electrico);
+}
+
+/* ===== TÍTULO INTERACTIVO ===== */
+#logo-titulo {
+    font-size: 1.8rem;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.titulo-principal {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, var(--dbz-oro-ssj), var(--dbz-naranja-fuego));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    animation: brilloTitulo 3s infinite alternate;
+    display: inline-block;
+}
+
+.titulo-destacado {
+    color: var(--dbz-azul-electrico);
+    text-shadow: 0 0 15px rgba(0, 174, 255, 0.7);
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-destacado::after {
+    content: '⚡';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    animation: parpadeoRayo 1s infinite;
+}
+
+/* Animación brillo título */
+@keyframes brilloTitulo {
+    0% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(255, 107, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.4);
+    }
+}
+
+/* Animación rayo */
+@keyframes parpadeoRayo {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* Efecto hover título */
+#logo-titulo:hover .titulo-principal {
+    animation: sacudida 0.5s;
+    background: linear-gradient(45deg, var(--dbz-rosa), var(--dbz-azul-electrico));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes sacudida {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+}
+
+/* ===== BOTONES CON ESTILO DRAGON BALL ===== */
+.btn-primary {
+    background: linear-gradient(45deg, var(--dbz-azul-electrico), var(--dbz-azul-cielo));
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 174, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--dbz-azul-cielo), var(--dbz-azul-electrico));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 174, 255, 0.6);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, var(--dbz-oro-ssj), var(--dbz-naranja-fuego));
+    border: none;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, var(--dbz-naranja-fuego), var(--dbz-oro-ssj));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.6);
+}
+
+/* Estilos para el carrusel */
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* ===== CARRUSEL CON EFECTO AURA ===== */
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(123, 31, 162, 0.1), 
+        rgba(0, 174, 255, 0.1));
+    z-index: 1;
+}
+
+.carousel-caption {
+    background: rgba(10, 26, 58, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    border-left: 5px solid var(--dbz-azul-electrico);
+    z-index: 2;
+}
+
+/* ===== TABLA CON ESTILO FUTURISTA ===== */
+.table-dark {
+    background: linear-gradient(90deg, var(--dbz-azul-oscuro), var(--dbz-violeta));
+    border: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(79, 195, 247, 0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 174, 255, 0.2);
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}
+
+.table th {
+    font-weight: 600;
+    border-bottom: 2px solid var(--dbz-azul-electrico);
+}
+
+/* Elemento personalizado (tarjeta con efecto hover) */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, 
+        var(--dbz-azul-electrico), 
+        var(--dbz-rosa), 
+        var(--dbz-oro-ssj));
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Título del footer personalizado */
+.footer-title {
+    color: var(--dbz-azul-electrico);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 174, 255, 0.5);
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--dbz-azul-electrico), var(--dbz-rosa));
+}
+
+/* Estilos para el botón de alerta */
+#alertaBtn {
+    transition: all 0.3s ease;
+}
+
+#alertaBtn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ESPACIAL ===== */
+footer {
+    background: linear-gradient(90deg, var(--dbz-azul-oscuro) 0%, #1a237e 100%);
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        var(--dbz-azul-electrico), 
+        var(--dbz-rosa), 
+        var(--dbz-oro-ssj));
+}
+
+/* ===== BADGES CON EFECTO ENERGÍA ===== */
+.badge {
+    font-weight: 600;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    border: none;
+}
+
+.bg-success {
+    background: linear-gradient(45deg, #00c853, #64dd17) !important;
+}
+
+.bg-danger {
+    background: linear-gradient(45deg, #ff1744, #f50057) !important;
+}
+
+.bg-warning {
+    background: linear-gradient(45deg, var(--dbz-oro-ssj), #ff9800) !important;
+}
+
+/* ===== EFECTOS ESPECIALES ===== */
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particula {
+    position: absolute;
+    background: var(--dbz-azul-electrico);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: flotar 10s infinite linear;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ===== SCROLLBAR PERSONALIZADA ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dbz-azul-oscuro);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--dbz-azul-electrico), var(--dbz-rosa));
+    border-radius: 5px;
+}
+
+/* Responsividad adicional */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 300px;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+    
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+    
+    .titulo-destacado::after {
+        right: -20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos para los mensajes de error del formulario */
+.invalid-feedback {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.form-control.is-invalid ~ .invalid-feedback {
+    opacity: 1;
+}
+
+/* Animación para el mensaje de éxito */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.alert-success {
+    animation: fadeIn 0.5s ease;
+    background: linear-gradient(45deg, #00c853, #64dd17);
+    border: none;
+    color: white;
+}
+
+/* Estilos para sección nosotros */
+.list-group-item {
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+.list-group-item::before {
+    content: '➤';
+    color: var(--dbz-azul-electrico);
+    margin-right: 10px;
+    font-weight: bold;
+}
